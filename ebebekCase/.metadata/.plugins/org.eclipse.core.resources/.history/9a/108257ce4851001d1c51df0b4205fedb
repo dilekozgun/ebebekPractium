@@ -1,0 +1,31 @@
+package ebebekSalaryCalculator;
+
+public class EmployeeManager {
+public double tax(double salary) {
+	if(salary<1000) {
+		System.out.println("Vergi uygulanmayacak");
+		return salary;
+	}
+	else if(salary>1000) {
+		return salary*3/100;
+	}
+	
+}
+
+public int bonus(int workHours) {
+	if (workHours>40) {
+		int bonusMaas = (workHours-40)*30;
+		return bonusMaas;
+		
+	} else {
+
+	}
+}
+
+
+
+
+
+
+
+}

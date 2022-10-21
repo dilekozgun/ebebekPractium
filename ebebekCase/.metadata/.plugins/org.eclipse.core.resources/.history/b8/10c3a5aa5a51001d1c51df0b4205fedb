@@ -1,0 +1,10 @@
+package ebebekSalaryCalculator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		EmployeeManager employeeManager = new EmployeeManager(new Employee("Dilek Özgün", 2000, 30, 2005));
+		employeeManager.tax();
+	}
+
+}

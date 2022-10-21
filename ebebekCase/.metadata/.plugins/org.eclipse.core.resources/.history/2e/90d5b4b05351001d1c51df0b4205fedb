@@ -1,0 +1,50 @@
+package ebebekSalaryCalculator;
+
+public class EmployeeManager {
+	private Employee employee;
+
+	public EmployeeManager(Employee employee) {
+		this.employee = employee;
+	}
+
+	public double tax(int salary) {
+		double vergi=0;
+		if (salary >= 1000) {
+			vergi= (salary * 3) / 100;
+			return vergi ;
+		} else {
+			return vergi;
+		}
+
+	}
+
+	public int bonus(int workHours) {
+		int bonus = 0;
+		if (workHours > 40) {
+			bonus = (workHours - 40) * 30;
+			return bonus;
+
+		} else {
+			return bonus;
+		}
+	}
+
+	public double raiseSalary(int hearYear, double salary) {
+		int currentYear = 2021;
+		int workYear = currentYear - hearYear;
+		if (workYear < 10) {
+			salary += (salary * 5) / 100;
+			return salary;
+		} else if (workYear > 9 && workYear < 20) {
+			salary += (salary * 10) / 100;
+			return salary;
+		} else if (workYear > 19) {
+			salary += (salary * 15) / 100;
+			return salary;
+		}
+		else {
+			System.out.println("Hatalı giriş.");
+		}
+	}
+
+}

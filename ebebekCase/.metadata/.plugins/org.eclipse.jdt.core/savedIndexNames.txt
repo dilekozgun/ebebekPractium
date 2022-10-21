@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Java\ebebekCase\.metadata\.plugins\org.eclipse.jdt.core
+1882400201.index
+2349422410.index
+1865797976.index
